@@ -6,7 +6,7 @@ informando, se não, ao final das tentativas, exiba o número correto.
 
 import random 
 
-numero = random.randit(1, 30)
+numero = random.randint(1, 30)
 
 tentativas = 0
 
@@ -15,8 +15,8 @@ while tentativas < 3:
 
   tentativas = tentativas + 1
 
-  tentativa = numero:
-    print('Acertou')
-    break
+  if tentativa == numero:
+    	print('Acertou')
+    	break
 
-print('Tente Novamente')
+print('O numero sorteado é ' + str(numero))

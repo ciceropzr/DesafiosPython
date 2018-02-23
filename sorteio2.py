@@ -5,7 +5,7 @@ se o usuario acetar exiba uma mensagem parabenizando
 
 import random 
 
-numero = random.randit(1, 30)
+numero = random.randint(1, 30)
 tentativa = int(input('Digite um numero: '))
 
 if numero == tentativa:
