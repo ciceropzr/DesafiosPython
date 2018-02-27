@@ -9,27 +9,22 @@ import random
 
 numero = random.randint(1, 30)
 
-tentativas = 1
+tentativas = 0
 
-while tentativas <= 3:
+while tentativas < 3:
   tentativa = int(input('Digite um numero de 1 a 30:\t'))
-
+  print(numero)
   tentativas = tentativas + 1
 
   if tentativa == numero:
-    print('Acertou')
+    print('Finalmente acertou!')
     break
 
-print('Agora vamos te ajudar.')
+  elif tentativa > numero:
+  	print('É menor')
 
-while tentativas > 3:
-	tentativa = int(input('Digite um numero de 1 a 30:\t'))
+  else:
+  	print('É maior')
 
-	if tentativa > numero:
-		print('\n\tÉ mais baixo')
-
-	elif tentativa < numero:
-		print('\n\tÉ masi alto')
-
-print('Finalmente acertou!')
-	
+else:
+	print('Errou e acabatam as tentativas! E o numero correto é ' + str(numero))

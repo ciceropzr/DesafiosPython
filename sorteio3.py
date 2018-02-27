@@ -11,8 +11,8 @@ numero = random.randint(1, 30)
 tentativas = 0
 
 while tentativas < 3:
-  tentativa = int(input('Digite um numero: '))
-
+  tentativa = int(input('Digite um numero entre 1 e 30: '))
+  print(numero)
   tentativas = tentativas + 1
 
   if tentativa == numero:
