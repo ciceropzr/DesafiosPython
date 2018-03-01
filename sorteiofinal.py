@@ -13,7 +13,7 @@ tentativas = 0
 
 while tentativas < 3:
   tentativa = int(input('Digite um numero de 1 a 30:\t'))
-  print(numero)
+  # print(numero)
   tentativas = tentativas + 1
 
   if tentativa == numero:
