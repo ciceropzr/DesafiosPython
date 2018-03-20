@@ -4,8 +4,15 @@ e troque as últimas quatro letras pela palavra gato.
 '''
 
 
-# for letras in range(palavra):
-# 	print(letras)
+palavra = input('Digite uma palavra:\t')
+letrasq = len(palavra)
 
-for i in range(ord('a'), ord('n')+1):
-    print chr(i),
+while letrasq < 5:
+	print('\nA palavra contem menos que 5 letras!')
+	palavra = input('Digite uma palavra maior:\t')
+	letrasq = len(palavra)
+
+	if letrasq >= 5:
+		break
+
+print(palavra[4:] + "gato")
